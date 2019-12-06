@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.divv{
+			width: 100px;
+			height: 100px;
+			background: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="divv"></div>
+	<button>给我变</button>
+	<script type="text/javascript">
+		var divs = document.querySelector('.divv');
+		var btn = document.querySelector('button');
+		// btn.onclick = function() {
+		// 	divs.style.background="url(../img/001.jpg)"//点击更换背景图片
+		// }
+		divs.onclick = function() {
+			this.style.display = "none";//点击让盒子消失 
+		}
+	</script>
+</body>
+</html>

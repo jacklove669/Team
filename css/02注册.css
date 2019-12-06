@@ -1,0 +1,236 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{	
+		background: url(../img/gbybj.jpg) no-repeat;
+		background-size: cover;
+}
+.box{
+	width: 1130px;
+	height: 590px;
+	margin: 0 auto;
+}
+.boxt{
+	margin-top: 100px;
+	width:380px; 
+	height:530px;
+	background:white;
+	float: right; 
+	background-color: rgba(235,235,235,0.2);
+
+}
+.bt{
+	width:380px;
+	color: red;
+}
+.bt h2{
+	width: 100px;
+	margin: 0 auto;
+}
+/*input{
+	width: 328px;
+	height: 42px;
+	outline:0;
+    border:none;
+    border-bottom: 1px solid #666;
+    font-size: 20px;
+    background-color: rgba(0, 22, 68, 0.04);
+   color: #bbbaba;
+   padding-left: 10px;
+   border-radius: 20px;
+   position: fixed;
+   right: 218px;
+   top: 175px;
+
+}
+.int2{
+	width: 328px;
+	height: 42px;
+	outline:0;
+    border:none;
+    border-bottom: 1px solid #666;
+    font-size: 20px;
+    background-color: rgba(0, 22, 68, 0.04);
+   color: #bbbaba;
+   padding-left: 10px;
+   border-radius: 20px;
+   position: fixed;
+    right: 218px;
+   top: 304px;
+
+}
+.int1{
+	width: 328px;
+	height: 42px;
+	outline:0;
+    border:none;
+    border-bottom: 1px solid #666;
+    font-size: 20px;
+    background-color: rgba(0, 22, 68, 0.04);
+   color: #bbbaba;
+   padding-left: 10px;
+   border-radius: 20px;
+   position: fixed;
+    right: 218px;
+   top: 238px;
+
+}
+button{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+	background:  #b40707;
+	border: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 20px;
+	  position: fixed;
+	right: 216px;
+   top: 380px;
+}*/
+.tishi span{
+	width: 328px;
+	height: 42px;
+	margin-left:26px; 	
+}
+
+.zh{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.zh input{
+	width: 328px;
+	height: 42px;
+	outline:0;
+    border:none;
+    border-bottom: 1px solid #666;
+    font-size: 20px;
+    background-color: rgba(0, 22, 68, 0.04);
+     color: #bbbaba;
+   padding-left: 10px;
+   border-radius: 20px;
+
+}
+.tishi span{
+	width: 328px;
+	height: 42px;
+	margin-left:26px; 	
+}
+.mima{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+}
+.mima input{
+    width: 328px;
+    height: 42px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #666;
+    font-size: 20px;
+    color: #bbbaba;
+     background-color: rgba(0, 22, 68, 0.04);
+    padding-left: 10px;
+    border-radius: 20px;
+}
+.dl{
+	width: 328px;
+	height: 43px;
+	margin: 20px 20px;
+}
+.dl button{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+	background:  #b40707;
+	border: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 20px;
+}
+.dl button:hover{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+	background:  #c70000;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+.zc{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top:-30px; 
+
+}
+.zc a{
+	color: skyblue;
+	text-decoration: none;
+}
+.zc a:hover{
+	color:blue ;
+	text-decoration: none;
+}
+.qt{
+	width: 328px;
+	height: 43px;
+	margin: 0 auto;
+	text-align: center;
+	color:blue;
+}
+.logo{
+    width: 172px;
+	margin: 0 auto;		
+}
+
+.logo .ao{
+	display:inline-block;
+	width: 54px;
+	height: 50px;
+	background: url(../img/glogo.png)no-repeat;
+	background-position: 0px -4px ;
+}
+.logo .ao:hover{
+display:inline-block;
+	width: 54px;
+	height: 50px;
+	background: url(../img/glogo.png)no-repeat;
+	background-position: 0px -50px ;
+}
+.logo .at{
+display:inline-block;
+	width: 54px;
+	height: 50px;
+	background: url(../img/glogo.png)no-repeat;
+	background-position: 0px -148px ;
+}
+.logo .at:hover{
+display:inline-block;
+	width: 54px;
+	height: 50px;
+	background: url(../img/glogo.png)no-repeat;
+	background-position: 0px -102px ;
+}
+.logo .as{
+display:inline-block;
+	width: 54px;
+	height: 50px;
+	background: url(../img/glogo.png)no-repeat;
+	background-position: -60px -4px ;
+}
+.logo .as:hover{
+display:inline-block;
+	width: 54px;
+	height: 50px;
+	background: url(../img/glogo.png)no-repeat;
+	background-position: -60px -50px ;
+}
+
+
+

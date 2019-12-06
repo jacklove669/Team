@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气</title>
+    <link rel="stylesheet" type="text/css" href="../css/weather.css">
+     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	
+    
+</head>
+<body class="day-fine night-cloudy" style="height: 1063px;">
+	<!-- 顶部 -->
+	<div class="header-wrapper">
+    <div class="header">
+        <div class="header-mask"></div>
+        <h1 class="logo"><a href="index.html"><img src="../img/moji.png"></a></h1>
+        <ul class="nav">
+            <li><a href="天气.html">首页</a><em style="display: none;"></em></li>
+            <li><a href="weather.html" class="active1">天气查询</a><em style="display: block;"></em></li>
+            <li><a href="二维码页面.html">下载</a><em style="display: none;"></em></li>
+        </ul>
+    </div>
+</div>
+	<!-- 搜索查询数据 -->
+  <!--   <div class="time">
+        <a class="year"><span></span><a>年</a></a>
+        <a class="month"><span></span><a>月</a></a>
+        <a class="day"><span></span><a>日</a></a>
+        <a class="hour"><span></span><a>时</a></a>
+        <a class="minute"><span></span><a分</a></a>
+        <a class="second"><span></span><a>秒</a></a>
+    </div>
+ -->
+	<div class="container">
+    <div class="content">
+         <div class="time">
+                <p class="year" style="color: red;"><span></span><span>年</span></p>
+                <p class="month" style="color: red;"><span></span><span>月</span></p>
+                <p class="day" style="color: red;"><span></span><span>日</span></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p style="font-size: 25px;"><span></span><span >:</span></p>
+                <p><span></span><span>:</span></p>
+                <p><span></span></p>
+              
+            </div>
+        <!--搜索-->
+        <div class="search-wrapper">
+            <div class="location">
+                <span class="icon"><img src="../img/website_ic_query_Location.png" width="30" height="30"></span>
+                <span class="name">青岛</span>
+                <input type="hidden" id="current-city" data-cityid="01012310">
+
+            </div>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="请输入你要查询的城市">
+                <!--<span id="search-button"><img src="img/website_ic_query_search.png"/></span>-->
+                 <button style="font-size: 18px;">搜索</button>
+                <div id="search-mask" style="display: none;"></div>
+                <div id="search-box" style="display: none;">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+       <!-- 天气数据详情 -->
+
+       <div id="weather-wrapper">
+            <div class="weather-mask"></div>
+            <div class="left-arrow">
+                <div class="left-arrow-mask"></div>
+            </div>
+            <div class="right-arrow">
+                <div class="right-arrow-mask"></div>
+            </div>
+            <div class="view-content">
+              <div class="weather-list">
+                <ul>
+                
+                </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 天气详情 -->
+
+        <div class="weather-detail" style="display: block;">
+            <div class="hour-wrapper">
+                <div class="hour-left">
+                    <div class="air-quality">
+                        <div class="wea-info">
+                            <div class="temp">23°C</div>
+                            <div class="status">晴</div>
+                            <div class="date" style="display: block;">农历：七月廿九</div>
+                        </div>
+                        <ul class="air">
+                            <li id="aqi">
+                                <img src="../img/website_ic_query_air_quality.png" id="aqi-img">
+                                <span id="aqi-num">65</span>
+                                <span id="aqi-txt">良好</span>
+                            </li>
+                            <li id="wind">
+                                <img src="../img/website_ic_query_wind.png">
+                                <span>4级</span>
+                            </li>
+                            <li id="hum">
+                                <img src="../img/website_ic_query_website_ic_query_humidity.png">
+                                <span>64%</span>
+                            </li>
+                        </ul>
+                        <div class="suggestion clearfix">除少数对某些污染物特别容易过敏的人群外，其他人群可以正常进行室外活动。</div>
+                    </div>
+                </div>
+
+                <div class="hour-right">
+                    <div class="hour-top">
+                        <span class="city-name">青岛</span>
+                    </div>
+                    <div class="hour-content">
+                        <div class="hour-left-arrow"><img src="../img/website_ic_query_more012.png"></div>
+                        <div class="hour-right-arrow"><img src="../img/website_ic_query_more01.png"></div>
+                        <div class="hour-list">
+                            <ul>
+                            
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer底部 -->
+<div id="copyright">
+        <p>Copyright©2005-2019 墨迹天气.com 版权所有 最美天气有限公司</p>
+        <p><a style="color:black;" href="http://www.miitbeian.gov.cn/"><span>京ICP证080047号[京ICP备08010314号-6]</span></a><a style="color:black;" href="http://www.360.cn/licence1.html"><span> 文网文[2009]024号</span></a><a style="color:black;" href="http://www.360.cn/licence2.html"> 新出网证（京）字069号</a> <a style="color:black;" href="http://www.360.cn/gongshangyingyezhizhao.html"><span>工商营业执照</span></a></p><p></p><p><a style="color:black;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000006"><img src="http://www.beian.gov.cn/file/ghs.png" "=""><span>>京公网安备 11000002000006号</span</a></p>
+    </div>
+    <script src="../js/jquery2.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/weather.js"></script>
+    <script type="text/javascript">
+    var more=document.querySelector(".more");
+    var diqu=document.querySelector(".diqu");
+    var tips=document.querySelector(".tips");
+    var tbody=document.querySelector("tbody");
+    var button=document.querySelector("button");
+    // var con=document.querySelector(".con");
+    var input=document.querySelector("#search-input");
+    var city=document.querySelector(".city-name")
+    var cityName=document.querySelector(".name");
+    var wendu=document.querySelector(".wea-info .temp");
+    var type=document.querySelector(".wea-info .status");
+    var date=document.querySelector(".wea-info .date");
+    var fl=document.querySelector(".wind .fl .wl");
+        var spans = document.querySelectorAll(".time p span:first-child")
+        setInterval(function () {
+            var date = new Date();
+            var year = date.getFullYear();//获取年份 返回值四位数字
+            // console.log(year)
+            var month = date.getMonth()+1; //返回值是0-11
+            var day = date.getDate();//返回值1-31
+            var hour = date.getHours();
+            hour=hour>=10?hour:"0"+hour;
+            var minute = date.getMinutes();
+            minute=minute>10?minute:"0"+minute;
+            var second = date.getSeconds();
+            second=second>=10?second:"0"+second;
+            var timeArr = [];
+            timeArr.push(year);
+            timeArr.push(month);
+            timeArr.push(day);
+            timeArr.push(hour);
+            timeArr.push(minute);
+            timeArr.push(second);
+            for (var i = 0; i < spans.length; i++) {
+                spans[i].innerHTML = timeArr[i]
+                
+            }
+        },1000)
+
+            
+    </script>
+</body>
+</html>

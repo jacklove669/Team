@@ -1,0 +1,704 @@
+*{
+	margin:0;
+	padding: 0; 
+}
+.tab{
+	margin: 0 auto;
+	width: 80%;
+	height: 50px;
+	/*background:skyblue;*/
+	overflow: hidden;
+	position: relative;
+	background-color: rgba(0,0,0,0.2);
+}
+.tab span{
+	position: absolute;
+	width: 133px;
+	height: 50px;
+	background-image:url(../img/gg11.png);
+	background-size: 133px 50px;
+	background-position: center;
+}
+.tab ul{
+	position: relative;
+}
+.tab li{
+	float: left;
+	width: 133px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+	list-style: none;
+}
+
+
+.ss {
+	width: 280px;
+	height: 50px;
+	background:white;
+	background: #f5f5f5;
+	float: right;
+	position: relative;
+
+}
+.ss input {
+	width: 162px;
+	height: 50px;
+	padding: 0 35px 0 21px;
+
+	border-radius: 4px;
+	opacity: .3;
+	border: none;
+	font-size: 16px;
+
+
+}
+.ss button{
+	background-color: transparent;
+	width: 61px;
+	height: 50px;
+	border: none;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	background: #f5f5f5;
+}
+.ss button:hover{
+	background-color: transparent;
+	width: 61px;
+	height: 50px;
+	border: none;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	background: #e7e7e7;
+}
+
+
+
+
+
+
+
+
+
+.ba{
+	width: 80%;
+
+	height: 450px;
+	margin: 10px  auto;
+}
+.bam{
+	height: 450px;
+	
+	float:right;
+}
+.bam ul li{
+	width: 500px;
+	height: 41px;
+	list-style:none;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.bam li a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #222;
+}
+.bam li .ll{
+	font-size: 20px;
+	text-decoration: none;
+	color: #369;
+	font-size: 28px;
+}
+.bam li .ll:hover{
+	font-size: 20px;
+	text-decoration: none;
+	color: #369;
+	font-size: 28px;
+}
+.bam li a:hover{
+	font-size: 20px;
+	text-decoration: underline;
+	color: #369;
+}
+.bam .lig {
+	width: 240px;
+	height: 160px;
+	background:url(../img/guu.jpg);
+	background-size: 240px 160px;
+	position: relative;
+	float: left;
+	cursor:pointer;
+	transition: all 1s;
+}
+.bam .lig:hover{
+	width: 240px;
+	height: 160px;
+	background:url(../img/guu.jpg);
+	background-size: 240px 160px;
+	position: relative;
+	float: left;
+	cursor:pointer;
+	box-shadow: 0px 15px 30px rgba(0,0,0,.2);
+	transform: translate3d(0, -2px, 0);
+}
+
+.bam .ligb {
+	width: 240px;
+	height: 160px;
+	background:url(../img/gg3.jpg);
+	background-size: 240px 160px;
+	position: relative;
+	margin-left:20px; 
+	float: left;
+	cursor:pointer;
+	transition: all 1s;
+}
+.bam .ligb:hover {
+	width: 240px;
+	height: 160px;
+	background:url(../img/gg3.jpg);
+	background-size: 240px 160px;
+	position: relative;
+	margin-left:20px; 
+	float: left;
+	cursor:pointer;
+	box-shadow: 0px 15px 30px rgba(0,0,0,.2);
+	transform: translate3d(0, -2px, 0);
+}
+.bam  .lig a{
+	width: 478px;
+	background: blue;
+	font-size: 20px;
+	text-decoration: none;
+	color: #222;
+	position: absolute;
+	top: 134px;
+}
+.bam  .lig a:hover{
+	width: 478px;
+	background: blue;
+	font-size: 20px;
+	text-decoration: none;
+	color: #900;
+	position: absolute;
+	top: 134px;
+}
+.boxc{
+	position: relative;
+	width: 650px;
+	height: 450px;
+	float:left;
+}
+.boxc img{
+	width: 650px;
+	height: 450px;
+	display: none;
+}
+.boxc .show{
+	display: inline-block;
+}
+.icon{
+	position: absolute;
+	width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	bottom: 0;
+}
+.icon span{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 10px;
+	text-align: center;
+	line-height: 30px;
+	background: #fff;
+	cursor: pointer;
+}
+.icon .select{
+	background: orange;
+	color: #fff;
+}
+.left,.right{
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	background: #eee;
+	display: none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.2);
+}
+.boxc:hover .left,.boxc:hover .right{
+	display: block;
+}
+.boxc .left{
+	left: 20px;
+}
+.boxc .right{
+	right: 20px;
+}
+
+.nav {
+	width: 80%;
+	height: 400px;
+	background: ;
+	border: 1px solid blue;
+	margin: 0 auto;
+}
+.nav h2{
+	width: 90%;
+	margin-left: 12px;
+}
+.nl{
+	width:33% ;
+	height: 368px;
+	float: left;
+
+}
+.nll{
+	width: 316px;
+}
+.nll ul{
+	display: inline-block;
+	width: 212px;
+	height: 180px;
+	text-align: center;
+}
+.nll ul li{
+	display: inline-block;
+	height: 180px;
+	text-align: center;
+}
+.nll ul li a{
+	text-decoration: none;
+	text-align: center;
+}
+.nll ul li a:hover{ 
+	text-decoration: underline;
+}
+.nll img{
+	width: 316px;
+	height: 150px;
+	background-size: 300px 300px;
+	margin-top: 6px;
+}
+
+.nc{
+	width:33%;
+	height: 368px;
+	float: left;
+
+}
+.ncc{
+	width:316px ;
+}
+.ncc li{
+	width:316px ;
+	margin-top:26px;
+	list-style: none;
+	
+	
+}
+.ncc li a {
+	width: 316px;
+	height: 32px;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 26px;
+	text-decoration: none;
+	color:#333;
+}
+
+.ncc li a:hover{
+	font-size: 26px;
+	color: #b21112;
+	text-decoration: underline;
+}
+.ncc .lia{
+	margin-bottom: 10px;
+}
+
+.nr{
+	width:34% ;
+	height: 368px;
+	float: left;
+}
+.nrr{
+	width:316px ;
+	margin: 0 auto;
+	margin:  0 20px;
+
+}
+.nrr li{
+	width:316px ;
+	overflow: hidden;
+	margin-top:19px;
+	list-style: none;
+	
+}
+.nrr li a {
+	font-size: 26px;
+	text-decoration: none;
+	color:#333;
+}
+.nrr li a:hover{
+	font-size: 26px;
+	color: #b21112;
+	text-decoration: underline;
+}
+.nra{
+	width: 80%;
+	height: 400px;
+	margin: 0 auto
+}
+.nra .nral{
+	width: 60%;
+	height: 400px;
+	float: left;
+}
+.nra .nral h2{
+	width: 100%;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ececec;
+	border-top: 2px solid #c7c7c7;
+}
+.nra .nral .cla{
+	display: inline-block;
+	font-size: 20px;
+	float: left;
+	color: #069;
+}
+.nra .nral .clb{
+	display: inline-block;
+	font-size: 14px;
+	float: left;
+	color: #999;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+}
+.nrar .clac{
+	width: 100%;
+	height: 340px;
+
+}
+.clac li{
+	width: 100%;
+	height:37px; 
+	line-height: 37px;
+	list-style: none;
+	border-bottom: 1px dotted #ececec;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;	
+}
+.clac li a{
+	text-decoration: none;
+	color: #222;
+
+}
+.clac li a:hover{
+	text-decoration: underline;
+	color: #900;     	
+}
+.g{
+	width:70%;
+	height: 400px;
+	float: left; 
+}
+.g li{
+	width: 100%;
+	height: 34px;
+	list-style: none;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.g li a{
+	text-decoration: none;
+	color: #222;
+}
+.g li a:hover{
+	text-decoration: underline;
+	color: #900;
+}
+.g li .lh{
+	text-decoration: none;
+	color: #222;
+	font-size: 20px;
+}
+.zp{
+	width: 30%;
+	float: right;
+}
+.zp a{
+	float: right;
+	width:218px;
+	height: 146px;
+	overflow: hidden;
+}
+.zp a img{
+	transition:all 0.6s;
+	width:218px;
+	height: 146px;
+}
+.zp a img:hover{
+	transform:scale(1.4);
+	width:218px;
+	height: 146px;
+}
+
+.zp .zpa{
+	margin-top:32px;
+}
+
+.nra .nrar{
+	width: 35%;
+	height: 400px;
+	float: right;
+}
+.nrar .k{
+	width: 100%;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ececec;
+	border-top: 2px solid #c7c7c7;
+} 
+.nrar .k .cla{
+	display: inline-block;
+	font-size: 20px;
+	float: left;
+	color: #069;
+}
+.nrar .k  .clb{
+	display: inline-block;
+	font-size: 14px;
+	float: left;
+	color: #999;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+}
+.yu{
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+.yu img{
+	width: 240px;
+	height: 140px;
+}
+.yu .yp{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	background: url(../img/gbf.png);
+	background-size: 23px 23px;
+	top: 66px;
+	left: 90px;
+}
+.yu .yp:hover{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	background: url(../img/gbf.png);
+	background-size: 23px 23px;
+	top: 66px;
+	left: 90px;
+}
+.yu a{
+	margin-left: 10px;
+	position: absolute;
+	top: 36%;
+	text-decoration: none;
+	color: #222;
+}
+.yu a:hover{
+	position: absolute;
+	top: 36%;
+	text-decoration: underline;
+	color: #900;
+}
+.yua{
+	position: relative;
+	width: 100%;
+	height: 150px;
+	margin-top: 37px;
+}
+.yua img{
+	width: 240px;
+	height: 140px;
+}
+.yua a{
+	margin-left: 10px;
+	position: absolute;
+	top: 28%;
+	text-decoration: none;
+	color: #222;
+}
+.yua a:hover{
+	position: absolute;
+	top: 28%;
+	text-decoration: underline;
+	color: #900;
+}
+.yua .yo{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	background: url(../img/gbf.png);
+	background-size: 23px 23px;
+	top: 66px;
+	left: 90px;
+}
+.yua .yo:hover{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	background: url(../img/gbf.png);
+	background-size: 23px 23px;
+	top: 66px;
+	left: 90px;
+}
+.oo{
+	width: 425px;
+	height: 400px;
+	float: right;
+	background: #666;
+	cursor: pointer;
+}
+.oo img{
+	width: 425px;
+	height: 400px;
+}
+.mn{
+	width: 80%;
+	height: 230px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+.mn li{
+	width: 293px;
+	/*height: 230px;*/
+	float: left;
+	margin-right:14px;
+	list-style: none;
+}
+.mn .mi{
+	width: 293px;
+	height: 230px;
+	float: left;
+	margin-right:0px;
+	list-style: none;
+
+}
+.mn li a{
+	width: 293px;
+	display: inline-block;
+	background: red;
+	overflow:hidden;
+	
+}	
+.mn li a img{
+	display: inline-block;
+	width: 293px;
+	background-size: 240px    200px;
+	margin-right:10px;
+	display: block;
+	transition:all 0.6s;
+	overflow:hidden;
+	
+}
+.mn li a img:hover{
+	display: inline-block;
+	width: 293px;
+	background-size: 240px    200px;
+	margin-right:10px;
+	display: block;
+	transform:scale(1.4);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+
+}
+
+.mn li a .im{
+	display:block;
+	width: 293px;
+	background-size: 240px    200px;
+	margin-right:0;
+}
+.mn li span{
+	width: 293px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	background: #3064bb;
+	height: 30px;
+	line-height: 30px;
+	background:skyblue;
+	color: white;
+}
+
+.yejiao{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #001e50;
+	margin-top: 10px;
+	padding: 20px 0;
+	font-size: 12px;
+}
+.ye{
+	width: 1000px;
+	margin: 0 auto;
+}
+.yejiao p{
+	width: 1000px;
+	height: 50px;
+	color: #a3a9b5; 
+	line-height: 50px;
+}
+.yejiao p a{
+	text-decoration: none;
+	color: #a3a9b5; 
+}
+.yejiao p a:hover{
+	color: white;
+}
+.yejiao .p1{
+	width: 789px;
+}
+.yejiao p img{
+	float: right;
+	width: 36px;
+	height: 50px;
+}
+.top {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	bottom: 20px;
+	right: 20px;
+}
+.top img{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+

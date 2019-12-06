@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/01登录.css">
+	<style>
+	
+	</style>
+</head>
+<body>
+<!-- <input type="text" class="in1" id="input2" placeholder="请输入11位手机号" ><br/>
+ <input type="Password" class="in2" id="input3"  placeholder="请输入密码" >
+ <button>登录 </button> -->
+
+
+
+	<div class="box">
+	 <div class="boxt">
+		<div class="bt">
+			<img src="" alt="">
+			<h2>账号登录</h2>
+		</div>
+		
+		
+			<div class="zh">
+			    <span>
+			     	<input type="text" id="input2" placeholder="请输入11位手机号" >
+			    </span>
+
+			</div>
+			<div class="tishi"><span id="span"></span></div>
+
+			<div class="mima">
+				<span>
+				    <input type="Password" id="input3"  placeholder="请输入密码" >
+				</span>
+			</div>	
+			<div class="tishi"><span id="spans"></span></div>
+		
+
+		<div class="dl">
+				<button >登录</button>
+				
+		</div>
+		<div class="zc">
+			<a href="02注册.html">注册账号</a>
+			<a href="">忘记密码</a>
+		</div>
+		<div class="qt">
+			<span>其他方式登录</span>
+
+		</div>
+		<div class="logo">
+			<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx8b6c0245e6c3b038&redirect_uri=https%3A%2F%2Fhwid1.vmall.com%2FCAS%2Fweixin%2Freturn&response_type=code&scope=snsapi_login&state=as3Cyu3rBASxts4VMCvCxkS8tXQDatjs#wechat_redirect" class="ao"></a>
+			<a href="https://weibo.com/?sudaref=www.baidu.com&display=0&retcode=6102" class="at"></a>
+			<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=209207&redirect_uri=https://hwid1.vmall.com/CAS/qq/return&response_type=code&state=fPLvUdVRQwCZ27jPFbn5MCVjZ8xp27rh&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr" class="as"></a>
+		</div>
+
+
+		
+		
+	</div>	
+	</div>
+	<script type="text/javascript">
+		var txt2 = document.querySelector('#input2');
+		var txt3 = document.querySelector('#input3');
+		var btn = document.querySelector('button');
+		
+		var sp = document.querySelector('#span');
+		var sps = document.querySelector('#spans');
+
+		btn.onblur = function () {
+			var reg = /^[0-9]$/;
+			if (reg.test(txt2.value)) {
+				sp.innerHTML = "";
+				sp.style.color = "green";
+			}else 
+			if(!txt2.value){
+				sp.innerHTML = "不能为空";
+				sp.style.color = "red";
+			}else{
+				sp.innerHTML = "格式错误";
+				sp.style.color = "red";
+			}
+			var reg2 = /^\w+$/;
+			if (reg2.test(txt3.value)) {
+				sps.innerHTML = "";
+				sps.style.color = "green";
+			}else if(!txt3.value){
+				sps.innerHTML = "不能为空";
+				sps.style.color = "red";
+			}else{
+				sps.innerHTML = "格式错误";
+				sps.style.color = "red";
+			}
+
+		}
+		
+	btn.onclick = function () {
+			var xhr = new XMLHttpRequest();
+			xhr.open('post',"http://192.168.1.5/archives/register.php");
+			// post 请求需要加请求头
+			xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+			// send('传递的参数')
+			xhr.send('userName=' + txt2.value + '&passWord=' + txt3.value)
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState == 4) {
+					var obj = JSON.parse(xhr.responseText)
+					console.log(obj.responseCode)
+					if (obj.responseCode == 0) {
+						alert('登录成功')
+						location.href='首页.html'
+						
+					}else if(obj.responseCode == 1){
+						alert('不能为空')
+						// location.href ='首页.html'
+					}else{
+						alert('登录失败')
+						// location.href ='http://www.baidu.com'
+					}
+				}
+			}
+		}
+		
+			
+
+
+	</script>
+</body>
+</html>

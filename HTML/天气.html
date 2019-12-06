@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>最美天气</title>
+	<link rel="stylesheet" type="text/css" href="../css/tianqi.css">
+	   <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<!-- 顶部 -->
+	<div class="header-wrapper">
+    <div class="back-mask"></div>
+    <div class="header">
+        <h1 class="logo"><a href="index.html"><img src="../img/moji.png"></a></h1>
+        <ul class="nav">
+            <li><a href="首页.html" class="active1">首页</a><em style="display: block;"></em></li>
+            <li><a href="weather.html" class="">天气查询</a><em style="display: none;"></em></li>
+            <li><a href="二维码页面.html">下载</a><em style="display: none;"></em></li>
+        </ul>
+    </div>
+</div>
+
+<div class="all">
+		<div class="screen">
+			<div class="ul">
+				 <video style="object-fit: fill; width: 1220px; height: 600px;" loop="loop" autoplay="autoplay" muted="muted">
+                <source src="http://update.zuimeitianqi.com/2001/weafile/web/pc/video/banner_video_111.mp4" type="video/mp4">
+            </video>
+				 <video style="object-fit: fill; width: 1200px; height: 600px; margin-top:16px; " loop="loop" autoplay="autoplay" muted="muted">
+                <source src="http://update.zuimeitianqi.com/2001/weafile/web/pc/video/banner_video_2.mp4" type="video/mp4">
+            </video>
+			</div>
+			<ol></ol>
+			<div class="arr">
+				<span class="left"><</span>
+				<span class="right">></span>
+			</div>
+		</div>
+	</div>
+<!-- 右侧顶部二维码 -->
+	<div class="fixed-box" style="display: block;">
+    <div class="title">免费下载</div>
+    <div class="fixed-code">
+        <img src="../img/download_code.jpg">
+    </div>
+</div>
+<!-- 底部 -->
+<div id="copyright">
+        <p>Copyright©2005-2019 墨迹天气.com 版权所有 最美天气有限公司</p>
+        <p><a style="color:#eee;" href="http://www.miitbeian.gov.cn/"><span>京ICP证080047号[京ICP备08010314号-6]</span></a><a style="color:#eee;" href="http://www.360.cn/licence1.html"><span> 文网文[2009]024号</span></a><a style="color:#eee;" href="http://www.360.cn/licence2.html"> 新出网证（京）字069号</a> <a style="color:#eee;" href="http://www.360.cn/gongshangyingyezhizhao.html"><span>工商营业执照</span></a></p><p></p><p><a style="color:#eee;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000006"><img src="http://www.beian.gov.cn/file/ghs.png" "=""><span>>京公网安备 11000002000006号</span</a></p>
+    </div>
+    <script type="text/javascript">
+    	// 1.获取相关元素
+		var box = document.querySelector('.all');
+		var ul = document.querySelector('.all .ul');
+		var ol = document.querySelector('.all ol');
+		var ulLiArr = ul.children;
+
+		// 2.补全相关盒子
+			// 1).复制第一张图片添加到ul数组中
+			var newLi = ulLiArr[0].cloneNode(true);
+			ul.appendChild(newLi);
+			// 2).生成ol里面的li
+			// console.log(ulLiArr)
+			for (var i = 0; i < ulLiArr.length-1; i++) {
+				var newOlLi = document.createElement('li');
+				newOlLi.innerHTML = i + 1;
+				ol.appendChild(newOlLi);
+			}
+			// 3).点亮ol里面的第一个li
+			var olLiArr = ol.children;
+			olLiArr[0].className = "active";
+
+		// 3.鼠标放在小方框上 实现轮播图片
+		for (var i = 0; i < olLiArr.length; i++) {
+			olLiArr[i].index = i;
+			olLiArr[i].onmouseenter = function () {
+				document.querySelector('.active').className = "";
+				olLiArr[this.index].className = "active";
+				animate(ul,-this.index*ulLiArr[0].offsetWidth);
+				// 用户触碰提示按钮 将索引值和key和square进行统一 防止乱码
+				square = key = this.index
+			}
+		}
+
+		// 4.添加定时器
+		var timer = null;
+		var key = 0;
+		var square = 0;
+		timer = setInterval(autoPlay,3000)
+		function autoPlay() {
+			key++;
+			square++;
+			if (key>olLiArr.length) {
+				ul.style.left = 0;
+				key = 1;
+			}
+
+			// 点亮的li和轮播图进行关联
+			square = square > olLiArr.length-1 ? 0 : square
+			document.querySelector('.active').className = "";
+			olLiArr[square].className = "active";
+
+			animate(ul,-key*ulLiArr[0].offsetWidth)
+		}
+
+		// 鼠标触碰提示按钮 停止定时器
+		box.onmouseenter = function () {
+			clearInterval(timer)
+		}
+		box.onmouseleave = function () {
+			timer = setInterval(autoPlay,3000)
+		}
+
+		// 5.左右按钮
+		var right = document.querySelector('.right');
+		right.onclick = function () {
+			autoPlay();
+		}
+
+		var left = document.querySelector('.left');
+		left.onclick = function (){
+			key--;
+			square--;
+			if (key<0) {
+				ul.style.left = -olLiArr.length*ulLiArr[0].offsetWidth + "px";
+				key = olLiArr.length-1;
+			}
+
+			// 点亮的li和轮播图进行关联
+			square = square < 0  ? olLiArr.length-1 : square;
+			document.querySelector('.active').className = "";
+			olLiArr[square].className = "active";
+
+			animate(ul,-key*ulLiArr[0].offsetWidth)
+		}
+		
+		function animate(element,position){
+			clearInterval(element.timer)
+			element.timer = setInterval(function(){
+				// 获取元素所在位置
+				var current = element.offsetLeft;
+				var step = position>current ? 15 : -15
+				if (Math.abs(current-position)>step) {
+					// 元素还需要接着走step
+					element.style.left = current + step + "px";
+				}else{
+					// 如果走到最后一步了 就直接让元素到达目标
+					element.style.left = position + "px";
+					clearInterval(element.timer)
+				}
+			},15)
+		}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LGS项目</title>
+	<link rel="stylesheet" href="../css/shouye.css">
+	<link rel="icon" href="../img/logo1.ico">
+</head>
+<body>
+	<div class="box">
+		<div class="boxa">
+			<div class="logo"><!-- logo图标 -->
+				<!-- <img src="../img/logo.png" alt=""> -->
+			</div>
+			<div class="boxl">
+				<a href="">首页</a>
+				<a href="../HTML/03新闻.html">新闻</a>
+				<a href="天气.html">天气</a>
+				<a href="../HTML/音乐.html">音乐</a>
+			</div>
+			<input type="text" placeholder='请输入你要寻找的图书'>
+			<button>搜索</button>
+
+			
+			<div class="boxr">
+				<div class="boxr_l"><a href="01登录.html">登录</a></div>
+				<div class="boxr_r"><a href="02注册.html">注册</a></div>
+			</div>	
+		</div>
+		<!-- 轮播图 -->
+		<!-- <div class="boxc">
+			<div class="icon">
+				<span class="select">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+			</div>
+			<div class="con">
+				<img src="../img/001.jpg" alt="" class="show">
+				<img src="../img/002.jpg" alt="">
+				<img src="../img/003.jpg" alt="">
+				<img src="../img/004.jpg" alt="">
+				<img src="../img/005.jpg" alt="">
+			</div>
+			<div class="left">‹</div>
+			<div class="right">›</div>
+		</div> -->
+		<div class="all">
+		<div class="screen">
+			<div class="ul">
+				<img src="../img/001.jpg" alt="">
+				<img src="../img/002.jpg" alt="">
+				<!-- <img src="../img/003.jpg" alt=""> -->
+			<!-- 	<img src="../img/004.jpg" alt="">
+				<img src="../img/005.jpg" alt=""> -->
+			</div>
+			<ol></ol>
+			<div class="arr">
+				<span class="left"><</span>
+				<span class="right">></span>
+			</div>
+		</div>
+	</div>
+
+<div class="content"><!-- 轮播图下面内容 -->
+			<div class="video-box">
+				<div class="box-hd">
+					<h2 class="title">喜欢</h2>
+					<a href="">查看全部</a>
+				</div>
+				<div class="ruok">
+				<ul>
+					<li>
+						<a href="http://huayu.zongheng.com/book/657829.html"><img  src="../img/xiaoshuo1.jpg" alt="">
+						</a>
+						<h5 id="zzz1" >家有仙铺</h5>
+						<p >贩卖仙界物品的微店，都卖什么？</p>
+						
+					</li>
+					<li>
+						<a href="http://huayu.zongheng.com/book/770962.html"><img src="../img/xiaoshuo2.jpg" alt="">
+						</a>
+						<h5>影帝的狗仔鲜妻</h5>
+						<p>狗仔坠入温泉池</p>
+						
+					</li>
+					<li>
+						<a href="http://huayu.zongheng.com/book/576577.html"><img src="../img/xiaoshuo3.jpg" alt="">
+						</a>
+						<h5>嫡锁君心</h5>
+						<p>盛世嫡女 傲视智斗豪门</p>
+						
+					</li>
+					<li>
+						<a href="http://huayu.zongheng.com/book/805552.html"><img src="../img/xiaoshuo4.jpg" alt="">
+						</a>
+						<h5>无效拒妻</h5>
+						<p>隔壁大叔太帅太拉风 她想立刻嫁给他</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_rgt2">
+			&copy; 京ICP证110507号 <a href="">baishan.com</a><a href="">京ICP备10046444号</a>
+			<a href="">京公网安备11010802020134号</a><a href="">京网文[2017]1530-131号</a><br>
+			<a href="">（京）网械平台备字（2018）第00005号</a>
+			<a href="">营业执照</a><br>
+			<a href="">增值电信业务许可证</a>网络信息经营备案（京）【2018】WLSPJYBAHF-12<br>违法和不良信息举报电话：185-0130-1238
+			<a href="">知识产权侵权投诉</a>本网站所列数据，除特殊说明，所有数据均出自我司工作室测试
+		</div>
+</div>
+</div>
+<script type="text/javascript">
+	// var spans = document.querySelectorAll('.boxc span');
+	// var imgs = document.querySelectorAll('.con img');
+	// var timer;
+	// for (var i = 0; i < spans.length; i++) {
+	// 	spans[i].index = i;
+	// 	spans[i].onclick = function () {
+	// 		document.querySelector('.select').className = "";
+	// 		document.querySelector('.show').className = "";
+
+	// 		this.className = "select";
+	// 		imgs[this.index].className = "show";
+	// 	}
+	// 	spans[i].onmouseenter = function () {
+	// 		this.onclick();
+	// 	}
+	// }
+
+	// 	// 定时器
+	// 	timer = setInterval(slider,5000)
+	// 	// 当我们点击右边箭头 找到具有特殊类名的span的下一个兄弟 点击一下 如果没有下一个兄弟 就点击第一个span
+	// 	function slider() {
+	// 		var select = document.querySelector('.select');
+	// 		if (select.nextElementSibling != null) {
+	// 			select.nextElementSibling.onclick();
+	// 		}else{
+	// 			spans[0].onclick();
+	// 		}
+	// 	}
+
+	// 	// 当我们点击右边箭头 找到具有特殊类名的span的下一个兄弟 点击一下 如果没有下一个兄弟 就点击第一个span
+		
+	// 	var right = document.querySelector('.right');
+	// 	right.onclick = function () {
+	// 		slider();
+	// 	}
+
+	// 	// 当我们点击左边箭头 找到具有特殊类名的span的上一个兄弟 点击一下 如果没有上一个兄弟 就点击最后一个span
+		
+	// 	var left = document.querySelector('.left');
+	// 	left.onclick = function () {
+	// 		var select = document.querySelector('.select');
+	// 		if (select.previousElementSibling != null) {
+	// 			select.previousElementSibling.onclick();
+	// 		}else{
+	// 			spans[spans.length-1].onclick();
+	// 		}
+	// 	}
+
+	// 	// 鼠标触碰左右按钮 提示按钮 关闭定时器 离开再重新打开定时器
+	// 	left.onmouseenter = function () {
+	// 		clearInterval(timer)
+	// 	}
+	// 	right.onmouseenter = function () {
+	// 		clearInterval(timer)
+	// 	}
+	// 	left.onmouseleave = function () {
+	// 		timer = setInterval(slider,5000)
+	// 	}
+	// 	right.onmouseleave = function () {
+	// 		timer = setInterval(slider,5000)
+	// 	}
+
+	// 	var icon = document.querySelector('.icon')
+	// 	icon.onmouseenter = function () {
+	// 		clearInterval(timer)
+	// 	}
+	// 	icon.onmouseleave = function () {
+	// 		timer = setInterval(slider,5000)
+	// 	}
+	// 	
+		// 需求 无缝轮播
+		// 步骤
+		// 1.获取相关元素
+		// 2.补全相关盒子
+			// 1).复制第一张图片添加到ul数组中
+			// 2).生成ol里面的li
+			// 3).点亮ol里面的第一个li
+		// 3.鼠标放在小方框上 实现轮播图片
+		// 4.添加定时器
+		// 5.左右切换按钮
+		
+
+		// 1.获取相关元素
+		var int = document.querySelector('input');
+		var btn = document.querySelector('button');
+		var box = document.querySelector('.all');
+		var ul = document.querySelector('.all .ul');
+		var ol = document.querySelector('.all ol');
+		var ulLiArr = ul.children;
+
+		// 2.补全相关盒子
+			// 1).复制第一张图片添加到ul数组中
+			var newLi = ulLiArr[0].cloneNode(true);
+			ul.appendChild(newLi);
+			// 2).生成ol里面的li
+			// console.log(ulLiArr)
+			for (var i = 0; i < ulLiArr.length-1; i++) {
+				var newOlLi = document.createElement('li');
+				newOlLi.innerHTML = i + 1;
+				ol.appendChild(newOlLi);
+			}
+			// 3).点亮ol里面的第一个li
+			var olLiArr = ol.children;
+			olLiArr[0].className = "active";
+
+		// 3.鼠标放在小方框上 实现轮播图片
+		for (var i = 0; i < olLiArr.length; i++) {
+			olLiArr[i].index = i;
+			olLiArr[i].onmouseenter = function () {
+				document.querySelector('.active').className = "";
+				olLiArr[this.index].className = "active";
+				animate(ul,-this.index*ulLiArr[0].offsetWidth);
+				// 用户触碰提示按钮 将索引值和key和square进行统一 防止乱码
+				square = key = this.index
+			}
+		}
+
+		// 4.添加定时器
+		var timer = null;
+		var key = 0;
+		var square = 0;
+		timer = setInterval(autoPlay,3000)
+		function autoPlay() {
+			key++;
+			square++;
+			if (key>olLiArr.length) {
+				ul.style.left = 0;
+				key = 1;
+			}
+
+			// 点亮的li和轮播图进行关联
+			square = square > olLiArr.length-1 ? 0 : square
+			document.querySelector('.active').className = "";
+			olLiArr[square].className = "active";
+
+			animate(ul,-key*ulLiArr[0].offsetWidth)
+		}
+
+		// 鼠标触碰提示按钮 停止定时器
+		box.onmouseenter = function () {
+			clearInterval(timer)
+		}
+		box.onmouseleave = function () {
+			timer = setInterval(autoPlay,3000)
+		}
+
+		// 5.左右按钮
+		var right = document.querySelector('.right');
+		right.onclick = function () {
+			autoPlay();
+		}
+
+		var left = document.querySelector('.left');
+		left.onclick = function (){
+			key--;
+			square--;
+			if (key<0) {
+				ul.style.left = -olLiArr.length*ulLiArr[0].offsetWidth + "px";
+				key = olLiArr.length-1;
+			}
+
+			// 点亮的li和轮播图进行关联
+			square = square < 0  ? olLiArr.length-1 : square;
+			document.querySelector('.active').className = "";
+			olLiArr[square].className = "active";
+
+			animate(ul,-key*ulLiArr[0].offsetWidth)
+		}
+		
+		function animate(element,position){
+			clearInterval(element.timer)
+			element.timer = setInterval(function(){
+				// 获取元素所在位置
+				var current = element.offsetLeft;
+				var step = position>current ? 15 : -15
+				if (Math.abs(current-position)>step) {
+					// 元素还需要接着走step
+					element.style.left = current + step + "px";
+				}else{
+					// 如果走到最后一步了 就直接让元素到达目标
+					element.style.left = position + "px";
+					clearInterval(element.timer)
+				}
+			},15)
+		}
+
+		console.log(int);
+		var txt =document.querySelector('#zzz1')
+		btn.onclick = function () {
+			var xhr = new XMLHttpRequest();
+			// api地址与参数之间用？拼接  参数与参数之间用&拼接
+			// get 请求通过地址栏传递参数 所以需要字符串拼接变量
+			xhr.open('get',"http://rap2api.taobao.org/app/mock/229494/news/?=" + int.value  )
+			xhr.send();
+			xhr.onreadystatechange = function () 
+			 {
+				if (xhr.readyState == 4) {
+					console.log(xhr.responseText)
+					var HeWeather_obj = JSON.parse(xhr.responseText) 
+					console.log(HeWeather_obj.result[0])
+					var weather_obj = HeWeather_obj;
+					txt.innerHTML = weather_obj.result[0].time;	
+				}
+			}
+		}  
+	</script>
+
+ 
+</body>
+</html>
